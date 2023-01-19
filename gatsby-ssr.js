@@ -1,0 +1,46 @@
+import * as React from "react"
+
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <link
+      key="switzer"
+      rel="preload"
+      href="/fonts/Switzer-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />,
+    <link
+      key="switzer-light"
+      rel="preload"
+      href="/fonts/Switzer-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />,
+    <link
+      key="switzer-medium"
+      rel="preload"
+      href="/fonts/Switzer-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />,
+    <link
+      key="switzer-semibold"
+      rel="preload"
+      href="/fonts/Switzer-Semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />,
+    <link
+      key="switzer-bold"
+      rel="preload"
+      href="/fonts/Switzer-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />,
+  ])
+}

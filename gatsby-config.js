@@ -3,15 +3,68 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `personal-website`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Ole Kirchner | Personal website`,
+    description: `Personal website of webdesigner and versatile hobby artist Ole Kirchner.`,
+    siteUrl: `https://olekirchner.com/`,
   },
-  plugins: ["gatsby-plugin-sitemap", "gatsby-plugin-mdx", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+  plugins: [
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1280,
+              withWebp: true,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
     },
-    __key: "pages"
-  }]
-};
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdx-work`,
+        path: `${__dirname}/content/work`,
+      },
+    },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1280,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-dark-mode',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/favicon.png',
+      },
+    },
+  ],
+}

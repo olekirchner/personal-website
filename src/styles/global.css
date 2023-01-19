@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+  font-weight: 400;
+  src: local('Source Sans Pro'),
+    url('/fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-display: swap;
+  font-weight: 600;
+  src: local('Source Sans Pro'),
+    url('/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2');
+}
+
+::selection {
+  @apply bg-neutral-300 text-black dark:bg-neutral-700 dark:text-white;
+}
+
+.gatsby-resp-image-wrapper {
+  @apply !max-w-none overflow-hidden rounded-md;
+}
+
+.lg-backdrop {
+  @apply !bg-white dark:!bg-black;
+}
+
+.lg-icon {
+  @apply !h-10 !w-10 !rounded-full !bg-neutral-200 !p-0 !text-neutral-800 !transition hover:!bg-neutral-300 dark:!bg-neutral-800 dark:!text-neutral-200 dark:hover:!bg-neutral-700;
+}
+
+.lg-close,
+.lg-download,
+.lg-zoom-in,
+.lg-zoom-out {
+  @apply mt-4;
+}
+
+.lg-close {
+  @apply mr-4;
+}
+
+.lg-download,
+.lg-zoom-in,
+.lg-zoom-out {
+  @apply mr-2;
+}
+
+.lg-counter {
+  @apply mt-6 ml-4 !h-auto rounded-md !bg-neutral-200 !px-2 !py-1 !text-neutral-800 !transition dark:!bg-neutral-800 dark:!text-neutral-200;
+}
+
+.lg-download:after {
+  @apply mt-[6px] block;
+}
+
+.lg-sub-html {
+  @apply !text-neutral-800 dark:text-neutral-200;
+}
+
+/* Prose link hover bug fix */
+.prose a {
+  @apply transition hover:text-neutral-500 dark:hover:text-neutral-400;
+}
