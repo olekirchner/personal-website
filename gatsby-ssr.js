@@ -3,41 +3,17 @@ import * as React from "react"
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
-      key="switzer"
+      key="source-sans-pro"
       rel="preload"
-      href="/fonts/Switzer-Regular.woff2"
+      href="/fonts/source-sans-pro-v21-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
     />,
     <link
-      key="switzer-light"
+      key="source-sans-pro"
       rel="preload"
-      href="/fonts/Switzer-Light.woff2"
-      as="font"
-      type="font/woff2"
-      crossOrigin="anonymous"
-    />,
-    <link
-      key="switzer-medium"
-      rel="preload"
-      href="/fonts/Switzer-Medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossOrigin="anonymous"
-    />,
-    <link
-      key="switzer-semibold"
-      rel="preload"
-      href="/fonts/Switzer-Semibold.woff2"
-      as="font"
-      type="font/woff2"
-      crossOrigin="anonymous"
-    />,
-    <link
-      key="switzer-bold"
-      rel="preload"
-      href="/fonts/Switzer-Bold.woff2"
+      href="/fonts/source-sans-pro-v21-latin-600.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"

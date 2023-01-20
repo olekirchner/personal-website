@@ -42,7 +42,7 @@ const WorkDetailsTemplate = ({
             <p className="mt-2 text-lg">{mdx.frontmatter.date}</p>
           </div>
 
-          <LightGallery plugins={[lgZoom]} mode="lg-fade" selector={'.item'}>
+          <LightGallery plugins={[lgZoom]} mode="lg-fade" selector={'.item'} licenseKey="37B26842-9E0243FE-A1853B0D-FEF219E2">
             <MDXProvider components={shortcodes}>{children}</MDXProvider>
           </LightGallery>
         </div>
