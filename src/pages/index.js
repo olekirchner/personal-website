@@ -6,11 +6,10 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const Index = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const work = data.allMdx.nodes
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <header className="border-b border-neutral-300 dark:border-neutral-700">
         <div className="mx-auto flex max-w-[420px] flex-col items-center justify-center py-12 px-4 md:max-w-lg md:py-16 md:px-6 xl:max-w-2xl xl:px-8 xl:py-20">
           <StaticImage
@@ -82,7 +81,7 @@ const Index = ({ data, location }) => {
 
 export default Index
 
-export const Head = () => <Seo title="Ole Kirchner | Personal website" />
+export const Head = () => <Seo />
 
 export const pageQuery = graphql`
   {
