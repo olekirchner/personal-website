@@ -35,8 +35,8 @@ const WorkDetailsTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="mx-auto max-w-7xl px-4 py-12 md:py-16 md:px-6 xl:px-8 xl:py-20">
-        <div className="prose max-w-none text-center text-neutral-700 prose-h1:text-xl prose-p:mx-auto prose-p:max-w-2xl  prose-img:w-full prose-img:cursor-zoom-in prose-img:rounded-md dark:prose-invert dark:text-neutral-300 md:prose-h1:text-2xl xl:prose-h1:text-3xl ">
+      <div className="mx-auto px-6 py-12 md:py-16 md:px-8 xl:px-12 xl:py-20">
+        <div className="prose max-w-none text-center text-neutral-700 prose-h1:text-xl prose-p:mx-auto prose-p:max-w-2xl  prose-img:w-full prose-img:cursor-zoom-in  dark:prose-invert dark:text-neutral-300 md:prose-h1:text-2xl xl:prose-h1:text-3xl ">
           <div>
             <h1 className="mb-0">{mdx.frontmatter.title}</h1>
             <p className="mt-2 text-lg">{mdx.frontmatter.date}</p>
@@ -48,8 +48,8 @@ const WorkDetailsTemplate = ({
         </div>
       </div>
 
-      <div className="mt-12 border-t border-neutral-300 py-12 dark:border-neutral-700 md:mt-16 md:py-16 xl:mt-20 xl:py-20">
-        <nav className="mx-auto max-w-7xl px-4 md:px-6 xl:px-8">
+      <div className="py-12 md:py-16 xl:py-20 border-t border-neutral-200 dark:border-neutral-700">
+        <nav className="mx-auto max-w-7xl px-6 md:px-8 xl:px-12">
           <ul className="flex flex-col items-center justify-between gap-y-8 sm:flex-row sm:gap-x-4">
             <li className="max-w-[300px]">
               {next && (
@@ -76,7 +76,7 @@ const WorkDetailsTemplate = ({
                     <GatsbyImage
                       image={nextImage}
                       alt={next.frontmatter.title}
-                      className="aspect-[5/4] rounded-md transition hover:brightness-75"
+                      className="aspect-[5/4] transition hover:brightness-75"
                     />
                   </Link>
                 </div>
@@ -107,7 +107,7 @@ const WorkDetailsTemplate = ({
                     <GatsbyImage
                       image={previousImage}
                       alt={previous.frontmatter.title}
-                      className="aspect-[5/4] rounded-md transition hover:brightness-75"
+                      className="aspect-[5/4] transition hover:brightness-75"
                     />
                   </Link>
                 </div>

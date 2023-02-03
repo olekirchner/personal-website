@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <div className="flex h-32 flex-col items-center justify-center border-t border-neutral-300 px-4 dark:border-neutral-700 md:h-16 md:flex-row md:justify-between md:px-6 xl:px-8">
+    <div className="flex h-32 flex-col items-center justify-center border-t border-neutral-200 px-6 dark:border-neutral-700 md:h-16 md:flex-row md:justify-between md:px-8 xl:px-12">
       <div className="text-center">
         Built using
         <a

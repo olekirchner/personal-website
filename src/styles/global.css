@@ -23,7 +23,7 @@
 }
 
 .gatsby-resp-image-wrapper {
-  @apply !max-w-none overflow-hidden rounded-md;
+  @apply !max-w-none overflow-hidden;
 }
 
 .lg-backdrop {
@@ -52,7 +52,7 @@
 }
 
 .lg-counter {
-  @apply mt-6 ml-4 !h-auto rounded-md !bg-neutral-200 !px-2 !py-1 !text-neutral-800 !transition dark:!bg-neutral-800 dark:!text-neutral-200;
+  @apply mt-6 ml-4 !h-auto !bg-neutral-200 !px-2 !py-1 !text-neutral-800 !transition dark:!bg-neutral-800 dark:!text-neutral-200;
 }
 
 .lg-download:after {

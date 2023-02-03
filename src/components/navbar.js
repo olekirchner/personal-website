@@ -7,7 +7,7 @@ import { Sun, Moon } from 'lucide-react'
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 left-0 z-[999] flex h-14 w-full items-center justify-between border-b border-neutral-300 bg-white px-4 dark:border-neutral-700 dark:bg-black md:h-16 md:px-6 xl:px-8">
+    <div className="sticky top-0 left-0 z-[999] flex h-14 w-full items-center justify-between border-b border-neutral-200 bg-neutral-100 px-6 dark:border-neutral-700 dark:bg-neutral-900 dark:bg-neutral-800 md:h-16 md:px-8 xl:px-12">
       <Link
         to="/"
         title="Ole Kirchner"
@@ -22,10 +22,10 @@ export default function Navbar() {
         Ole Kirchner
       </Link>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-2 sm:gap-4">
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
-            <label className="cursor-pointer rounded-full p-[6px] text-2xl transition hover:bg-neutral-300 dark:hover:bg-neutral-700">
+            <label className="cursor-pointer rounded-full p-[6px] text-2xl transition hover:bg-neutral-200 dark:hover:bg-neutral-700">
               <input
                 type="checkbox"
                 onChange={(e) =>
@@ -46,8 +46,8 @@ export default function Navbar() {
         <a
           href="mailto:ole_kirchner@gmx.de"
           title="Let's have a chat"
-          className="rounded-full bg-neutral-200 px-4 py-1 text-neutral-800 
-        transition hover:bg-neutral-300 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700"
+          className="rounded-full bg-emerald-700 px-4 py-1
+        text-white transition hover:bg-emerald-600 dark:hover:bg-emerald-800"
         >
           Email me
         </a>
