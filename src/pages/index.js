@@ -24,7 +24,7 @@ const Index = ({ data, location }) => {
             </b>{' '}
             A{' '}
             <b className="font-semibold text-black dark:text-white">
-              webdesigner
+              freelance webdesigner
             </b>{' '}
             and versatile{' '}
             <b className="font-semibold text-black dark:text-white">
