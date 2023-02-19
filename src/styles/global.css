@@ -60,7 +60,7 @@
 }
 
 .lg-sub-html {
-  @apply !text-neutral-800 dark:text-neutral-200;
+  @apply !text-neutral-800 dark:!text-neutral-200;
 }
 
 /* Prose link hover bug fix */
