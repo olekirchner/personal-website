@@ -56,7 +56,11 @@
 }
 
 .lg-components .lg-sub-html {
-  @apply !text-neutral-800 dark:!text-neutral-200;
+  @apply !text-neutral-800;
+}
+
+body.dark .lg-components .lg-sub-html {
+  color: #e5e5e5 !important;
 }
 
 .lg-download:after {
