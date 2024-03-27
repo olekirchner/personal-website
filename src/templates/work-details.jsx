@@ -35,14 +35,14 @@ const WorkDetailsTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <div className="mx-auto px-6 py-12 md:py-16 md:px-8 xl:px-12 xl:py-20">
-        <div className="prose max-w-none text-center text-neutral-700 prose-h1:text-xl prose-p:mx-auto prose-p:max-w-2xl  prose-img:w-full prose-img:cursor-zoom-in  dark:prose-invert dark:text-neutral-300 md:prose-h1:text-2xl xl:prose-h1:text-3xl ">
+      <div className="mx-auto px-4 py-12 sm:px-6 md:py-16 md:px-8 xl:px-12 xl:py-20">
+        <div className="prose max-w-none text-center text-neutral-700 prose-h1:text-2xl prose-h2:text-xl prose-p:mx-auto prose-p:max-w-2xl prose-img:w-full prose-img:cursor-zoom-in dark:prose-invert dark:text-neutral-300 md:prose-h1:text-3xl xl:prose-h1:text-4xl xl:prose-h2:text-2xl">
           <div>
             <h1 className="mb-0">{mdx.frontmatter.title}</h1>
             <p className="mt-2 text-lg">{mdx.frontmatter.date}</p>
           </div>
 
-          <LightGallery plugins={[lgZoom]} mode="lg-fade" selector={'.item'} licenseKey="37B26842-9E0243FE-A1853B0D-FEF219E2">
+          <LightGallery plugins={[lgZoom]} mode="lg-fade" download={false} actualSize={false} showZoomInOutIcons={true} selector={'.item'} licenseKey="37B26842-9E0243FE-A1853B0D-FEF219E2">
             <MDXProvider components={shortcodes}>{children}</MDXProvider>
           </LightGallery>
         </div>
