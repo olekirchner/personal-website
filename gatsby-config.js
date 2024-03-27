@@ -66,5 +66,6 @@ module.exports = {
         icon: 'src/assets/images/favicon.png',
       },
     },
+    `gatsby-plugin-netlify`
   ],
 }
