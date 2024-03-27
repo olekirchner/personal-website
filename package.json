@@ -30,8 +30,8 @@
     "gatsby-transformer-sharp": "^5.4.0",
     "lightgallery": "^2.7.1",
     "lucide-react": "^0.105.0-alpha.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "smooth-scrollbar": "^8.8.1"
   },
   "devDependencies": {
