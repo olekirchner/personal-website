@@ -18,6 +18,14 @@
     url('/fonts/source-sans-pro-v21-latin-600.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Kalam';
+  font-display: swap;
+  font-weight: 700;
+  src: local('Kalam'),
+    url('/fonts/kalam-700.woff2') format('woff2');
+}
+
 ::selection {
   @apply bg-neutral-300 text-black dark:bg-neutral-700 dark:text-white;
 }
