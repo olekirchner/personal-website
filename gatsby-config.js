@@ -4,8 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `Ole Kirchner | Personal website`,
-    description: `Personal website of webdesigner and versatile hobby artist Ole Kirchner.`,
-    siteUrl: `https://olekirchner.com/`,
+    description: `Personal website of "International Media and Computing" student Ole Kirchner`,
+    siteUrl: `https://ole-kirchner.com/`,
   },
   plugins: [
     {
