@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Source Sans Pro', 'sans-serif'],
+      handwriting: ['Kalam', 'handwriting']
     },
     extend: {},
   },
