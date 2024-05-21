@@ -48,7 +48,7 @@ const Index = ({ data, location }) => {
         <ol className="mx-auto grid max-w-[420px] gap-y-8   sm:max-w-none sm:grid-cols-2 sm:gap-x-6 md:max-w-[860px] md:gap-y-10 md:gap-x-8  lg:max-w-[1400px] lg:grid-cols-3 xl:max-w-none xl:gap-x-10 xl:gap-y-14 ">
           {work.map((workItem) => {
             return (
-              <li key={workItem.frontmatter.slug}>
+              <li key={workItem.frontmatter.slug} className={workItem.frontmatter.slug}>
                 <article>
                   <Link to={'/work/' + workItem.frontmatter.slug} title={workItem.frontmatter.description}>
                     <GatsbyImage
