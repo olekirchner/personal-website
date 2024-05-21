@@ -79,3 +79,8 @@ body.dark .lg-components .lg-sub-html {
 .prose a {
   @apply transition hover:text-neutral-500 dark:hover:text-neutral-400;
 }
+
+/* Hide specific work item */
+.chess-program-in-java {
+    display: none;
+}
