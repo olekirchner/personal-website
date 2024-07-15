@@ -32,14 +32,14 @@ export default function Navbar() {
           />
         </a>
 
-        <a href="https://www.linkedin.com/in/ole-kirchner-23b279189/" target="blank" title="Visit my LinkedIn profile" className="h-4">
+        {/* <a href="https://www.linkedin.com/in/ole-kirchner-23b279189/" target="blank" title="Visit my LinkedIn profile" className="h-4">
           <StaticImage
             src="../assets/images/linkedin-icon.png"
             alt="LinkedIn Icon"
             className="w-4 invert transition hover:opacity-70 dark:invert-0"
             placeholder="none"
           />
-        </a>
+        </a> */}
 
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
